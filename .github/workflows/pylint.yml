@@ -15,12 +15,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Prospector Check
-  # You may pin to the exact commit or the version.
-  # uses: jpetrucciani/prospector-check@28f7a9c4fb57567de3d555054c927e07d43a62f9
       uses: jpetrucciani/prospector-check@1.10.3
       with:
-    # Optional prospector flags (refer to `prospector --help`)
-        prospector_flags:  --strictness high --output-format text
+           prospector_flags:  --strictness high --output-format text
           
     #- name: Install dependencies
      # run: |

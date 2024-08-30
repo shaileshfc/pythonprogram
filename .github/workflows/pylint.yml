@@ -19,6 +19,8 @@ jobs:
         python -m pip install prospector
     - name: Run Prospector
       run: |
+        pwd
+        ls -ltr |grep py
         prospector . --output-format text
           
     #- name: Install dependencies

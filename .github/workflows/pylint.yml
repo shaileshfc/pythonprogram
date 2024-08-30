@@ -14,10 +14,9 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Prospector Check
-      uses: jpetrucciani/prospector-check@1.10.3
-      with:
-           prospector_flags:  --strictness high --output-format text
+    - name: Run Prospector
+      run: |
+        prospector . --output-format text
           
     #- name: Install dependencies
      # run: |

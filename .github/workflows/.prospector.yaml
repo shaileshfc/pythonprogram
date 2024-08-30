@@ -1,0 +1,14 @@
+strictness: veryhigh
+test-warnings: true
+doc-warnings: true
+ignore-missing-imports: false
+uses:
+  - flask
+tools:
+  pylint:
+    disable:
+      - C0114  # disable missing module docstring warning
+  bandit:
+    profile: full
+  pycodestyle:
+    max_line_length: 80

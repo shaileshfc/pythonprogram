@@ -22,7 +22,7 @@ jobs:
       run: |
         pwd
         ls -ltr |grep py
-        prospector . --strictness veryhigh  prospector . --tools pyflakes,pep8 --output-format text
+        prospector . --strictness veryhigh  prospector . --w bandit,dodgy,mccabe,mypy,pycodestyle,pydocstyle,pyflakes,pylint,pyright,pyroma,vulture --output-format text
           
     #- name: Install dependencies
      # run: |

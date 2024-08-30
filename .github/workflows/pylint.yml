@@ -17,7 +17,7 @@ jobs:
     - name: Install Prospector
       run: |
         pip install dodgy mccabe mypy  pycodestyle pydocstyle pylint
-        python -m pip install prospector
+        python -m pip install prospector[with_bandit]
     - name: Run Prospector
       run: |
         prospector . --strictness veryhigh  -w bandit  --output-format text

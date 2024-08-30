@@ -20,7 +20,7 @@ jobs:
       uses: jpetrucciani/prospector-check@1.10.3
       with:
     # Optional prospector flags (refer to `prospector --help`)
-        prospector_flags:  --strictness high
+        prospector_flags:  --strictness high --output-format text
           
     #- name: Install dependencies
      # run: |

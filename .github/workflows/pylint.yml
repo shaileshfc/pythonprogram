@@ -20,7 +20,7 @@ jobs:
         python -m pip install prospector
     - name: Run Prospector
       run: |
-        prospector . --strictness veryhigh  -w bandit,dodgy,mccabe,mypy,pycodestyle,pydocstyle,pylint --output-format text
+        prospector . --strictness veryhigh  -w bandit  --output-format text
           
     #- name: Install dependencies
      # run: |

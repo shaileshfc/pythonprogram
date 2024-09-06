@@ -15,3 +15,9 @@ pycodestyle:
 
 bandit:
   run: true
+
+pyflakes:
+  run: false
+
+vulture:
+  run: true

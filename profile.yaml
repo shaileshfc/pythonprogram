@@ -10,29 +10,22 @@ test-warnings: true
 doc-warnings: false
 
 pep8:
-    max-line-length: 120
+  max-line-length: 120
 pyflakes:
-    enabled: false
+  enabled: false
 eradicate:
-    enabled: false
+  enabled: false
 vulture:
-    enabled: false
+  enabled: false
 bandit:
-    enabled: false
+  enabled: false
 mypy:
-    enabled: false
-    ignore_missing_imports: false
-    strict: True
+  enabled: false
+  ignore_missing_imports: false
+  strict: True
 pycodestyle:
-    enbaled: false
+  enbaled: false
 dodgy:
-    enabled: false
+  enabled: false
 pylint:
-    enabled: false
-profiles:
-  default:
-    inherit: base
-    score:
-      low: 3
-      medium: 5
-      high: 7
+  enabled: false

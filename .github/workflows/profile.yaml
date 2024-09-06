@@ -1,17 +1,1 @@
 output-format: json
-
-strictness: medium
-test-warnings: true
-doc-warnings: false
-
-pycodestyle:
-  disable:
-    - W602
-    - W603
-  enable:
-    - W601
-  options:
-    max-line-length: 79
-
-mccabe:
-  run: false

@@ -1,5 +1,5 @@
 output-format: text
-strictness: medium
+strictness: high
 test-warnings: true
 doc-warnings: false
 
@@ -13,5 +13,5 @@ pycodestyle:
   options:
     max-line-length: 79
 
-mccabe:
+bandit:
   run: true

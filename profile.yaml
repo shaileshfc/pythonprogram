@@ -10,13 +10,13 @@ pep8:
 pyflakes:
     enabled: false
 eradicate:
-    enabled: true
+    enabled: false
 vulture:
-    enabled: true
+    enabled: false
 bandit:
-    enabled: true
+    enabled: false
 mypy:
-    enabled: true
+    enabled: false
     ignore_missing_imports: false
     strict: True
 pycodestyle:

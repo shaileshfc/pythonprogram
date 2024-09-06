@@ -4,26 +4,26 @@ source:
     - src
   exclude:
     - .github
-linters:
-  pep8:
+
+pep8:
     max-line-length: 120
-  pyflakes:
+pyflakes:
     enabled: false
-  eradicate:
+eradicate:
     enabled: true
-  vulture:
+vulture:
     enabled: true
-  bandit:
+bandit:
     enabled: true
-  mypy:
+mypy:
     enabled: true
     ignore_missing_imports: false
     strict: True
-  pycodestyle:
+pycodestyle:
     enbaled: false
-  dodgy:
+dodgy:
     enabled: false
-  pylint:
+pylint:
     enabled: false
 profiles:
   default:

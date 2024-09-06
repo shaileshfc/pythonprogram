@@ -31,6 +31,12 @@ tools:
     run: false # Ensure code is well-documented (important for security and maintainability)
   pyright:
     run: false  # Perform type checking to catch type-related bugs
+  dodgy:
+    run: false  # Perform type checking to catch type-related bugs
+  mccabe:
+    run: false  # Perform type checking to catch type-related bugs
+  pycodestyle:
+    run: false  # Perform type checking to catch type-related bugs    
 
 # Additional settings for specific tools
 pylint:

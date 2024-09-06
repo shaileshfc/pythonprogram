@@ -20,7 +20,7 @@ jobs:
         python -m pip install prospector[with_bandit]
     - name: Run Prospector
       run: |
-        prospector .
+        prospector . .prospector.yaml
           
     #- name: Install dependencies
      # run: |

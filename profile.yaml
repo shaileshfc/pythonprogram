@@ -1,9 +1,13 @@
-version: 3
 source:
   paths:
-    - src
+    - .
   exclude:
     - .github
+    
+output-format: text
+strictness: high
+test-warnings: true
+doc-warnings: false
 
 pep8:
     max-line-length: 120

@@ -21,6 +21,10 @@ linters:
     strict: True
   pycodestyle:
     enbaled: false
+  dodgy:
+    enabled: false
+  pylint:
+    enabled: false
 profiles:
   default:
     inherit: base

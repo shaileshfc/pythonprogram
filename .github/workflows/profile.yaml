@@ -4,15 +4,6 @@ strictness: medium
 test-warnings: true
 doc-warnings: false
 
-inherits:
-  - my/other/profile.yml
-
-ignore-paths:
-  - docs
-
-ignore-patterns:
-  - (^|/)skip(this)?(/|$)
-
 pycodestyle:
   disable:
     - W602

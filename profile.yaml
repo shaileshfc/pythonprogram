@@ -2,7 +2,10 @@ output-format: text
 strictness: high
 test-warnings: true
 doc-warnings: false
-
+source:
+  exclude:
+    - .github
+    - newfolder
 pycodestyle:
   run: false
   disable:

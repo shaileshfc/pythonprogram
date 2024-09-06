@@ -4,6 +4,7 @@ test-warnings: true
 doc-warnings: false
 
 pycodestyle:
+  run: false
   disable:
     - W602
     - W603

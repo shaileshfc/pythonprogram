@@ -1,0 +1,32 @@
+version: 3
+source:
+  paths:
+    - src
+  exclude:
+    - tests
+    - docs
+    - venv
+    - .git
+    - .tox
+linters:
+  pep8:
+    max-line-length: 120
+  pyflakes:
+    enabled: true
+  eradicate:
+    enabled: true
+  vulture:
+    enabled: true
+  bandit:
+    enabled: true
+  mypy:
+    enabled: true
+    ignore_missing_imports: false
+    strict: True
+profiles:
+  default:
+    inherit: base
+    score:
+      low: 3
+      medium: 5
+      high: 7

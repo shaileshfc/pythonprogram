@@ -1,0 +1,47 @@
+# .prospector.yml
+
+strictness: veryhigh  # Use the highest level of strictness to catch as many issues as possible
+test-warnings: true  # Include warnings related to test files
+doc-warnings: true  # Include warnings related to missing documentation
+
+tools:
+  bandit:
+    run: true
+    profile: full  # Use the full Bandit profile for maximum security checks
+  pylint:
+    run: true
+    disable:
+      - C0114  # Example: Disable missing module docstring warning if it's too noisy
+  pycodestyle:
+    run: true
+    max_line_length: 100  # Enforce a reasonable line length
+  dodgy:
+    run: true  # Check for the use of dodgy strings like hardcoded passwords, insecure temp file usage, etc.
+  mccabe:
+    run: false  # Disable mccabe (complexity checker) if not strictly necessary
+  vulture:
+    run: true  # Detect and remove dead code which could hide security vulnerabilities
+  pyroma:
+    run: false  # Disable pyroma (checks Python package quality) unless packaging is a concern
+  vulture:
+    run: true  # Find unused code to reduce the attack surface
+  pyflakes:
+    run: false # General linting tool to catch undefined variables, etc.
+  pydocstyle:
+    run: false # Ensure code is well-documented (important for security and maintainability)
+  pyright:
+    run: true  # Perform type checking to catch type-related bugs
+
+# Additional settings for specific tools
+pylint:
+  disable:
+    - C0114  # Disable missing module docstring (if too noisy)
+    - C0116  # Disable missing function docstring (if too noisy)
+
+# Ignore certain patterns, e.g., migrations or generated code
+ignore-patterns:
+  - "migrations/*"
+  - "docs/*"
+
+# Use absolute paths in reports for better traceability
+absolute-paths: true

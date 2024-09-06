@@ -2,10 +2,8 @@ output-format: text
 strictness: high
 test-warnings: true
 doc-warnings: false
-source:
-  exclude:
-    - .github
-    - newfolder
+ignore-paths:
+  - newfolder
 pycodestyle:
   run: false
   disable:

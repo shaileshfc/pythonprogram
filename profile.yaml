@@ -13,7 +13,4 @@ pycodestyle:
     max-line-length: 79
 
 mccabe:
-  run: false
-
-pycodestyle 
-  run: false
+  run: true
